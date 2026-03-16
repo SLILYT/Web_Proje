@@ -1,0 +1,52 @@
+:root {
+  --transition-speed: 0.3s;
+}
+
+body {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+[data-bs-theme='dark'] body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.game-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+.classic-game-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.classic-game-item:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+[data-bs-theme='dark'] .classic-game-item:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Custom Scrollbar for Dark Mode */
+[data-bs-theme='dark'] ::-webkit-scrollbar {
+  width: 10px;
+}
+
+[data-bs-theme='dark'] ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+[data-bs-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+[data-bs-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
