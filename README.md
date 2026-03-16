@@ -54,3 +54,4 @@ Yönergedeki klasör yapısına sadık kalınmıştır:
 
 ---
 *Bu proje bir staj projesi kapsamında hazırlanmıştır.*
+*Serra Tozlu*
